@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Wirtualna Kasa</title>
 </head>
 <body>
     <div class="conteiner">
         <header>
-            <h1>Wirtualna Kasa</h1>
+            <h1>Witaj w wirtualnej kasie</h1>
         </header>
+        <main>
+            <p>Mam do zapłacenia <span id="due"></span></p>
+            <label for="the-rest-of-money">Wpisz ile dostane reszty</label>
+            <input type="number" name="
+            the-rest-of-money" id="rest-of-money">
+            <button id="btns" type="submit">Sprawdź czy dobrze wydałeś</button>
+            <div id="good-rest">Dobrze wydałeś</div>
+            <div id="bad-rest">Policz jeszcze raz</div>
+        </main>
     </div>
 </body>
 </html>
