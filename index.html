@@ -18,10 +18,15 @@
             <h1>Witaj w wirtualnej kasie</h1>
         </header>
         <main>
-            <p>Mam do zapłacenia <span id="due"></span></p>
+            <p>Mam do zapłacenia <br><span id="due">24 zł</span></p>
+
             <label for="the-rest-of-money">Wpisz ile dostane reszty</label>
-            <input type="number" name="
-            the-rest-of-money" id="rest-of-money">
+            <input 
+            type="number" 
+            name="the-rest-of-money" 
+            id="rest-of-money"
+            min="0" max="100" >
+
             <button id="btns" type="submit">Sprawdź czy dobrze wydałeś</button>
             <div id="good-rest">Dobrze wydałeś</div>
             <div id="bad-rest">Policz jeszcze raz</div>
