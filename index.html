@@ -18,21 +18,22 @@
             <h1>Witaj w wirtualnej kasie</h1>
         </header>
         <main>
-            <p>Mam do zapłacenia <br><span id="due">24 zł</span></p>
-            <p>Zapłaciłem <br><span id="due">24 zł</span></p>
+            <p>Mam do zapłacenia <br><span class="due" id="to-pay">33zł</span>zł</p>
+            <p>Zapłaciłem <br><span id="paid" class="due">24 zł</span>zł</p>
 
             <label for="the-rest-of-money">Wpisz ile dostane reszty</label>
-            <input 
+            <input  
             type="number" 
             name="the-rest-of-money" 
             id="rest-of-money"
             min="0" max="100" >
 
-            <button id="btns" type="submit">Sprawdź czy dobrze wydałeś</button>
-            <div id="good-rest">Dobrze wydałeś</div>
-            <div id="bad-rest">Policz jeszcze raz</div>
+            <button   class="btns" type="submit">Sprawdź czy dobrze wydałeś</button>
+            <div  id="good-rest">Dobrze wydałeś</div>
+            <div  id="bad-rest">Policz jeszcze raz</div>
+            <button class="btns" type="reset">Restart</button>
         </main>
     </div>
-
+<script src="app.js"></script>
 </body>
 </html>

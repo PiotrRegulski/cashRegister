@@ -68,21 +68,27 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1.5rem;
     
 }
 
 p{
     text-align: center;
-    margin-top: 1em;
+    padding-top: 1.5rem;
+    
 }
-#due{
-    display: block;
-    border: 1px solid wheat;
+label{
+    padding-top: 1.5rem;
+}
+.due{
+    
+   
     padding:2px;
-    margin: 12px;
+    
+    
 }
 
-#btns{
+.btns{
     
        
         top:50%;
@@ -96,7 +102,7 @@ p{
         margin: 4px;
       
 }
-#btns:hover{
+.btns:hover{
     background-color: #fff;
     color: #0a0a23;
 }
