@@ -1,40 +1,50 @@
+:root{
+    --mainfont:rgb(247, 215, 175);
+    --blue:rgb(73, 189, 232);
+}
+
+
 *{
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-   font-size: 36px;
-   color: rgb(217, 179, 131);
+   font-size: 1.3rem;
+   color: var(--mainfont);
    
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(2,0,36);
     background: linear-gradient(117deg, rgba(2,0,36,1) 0%, rgba(30,146,166,1) 36%, rgba(0,212,255,1) 100%);
+   
 }
 .conteiner
 {
-    margin: 4% auto;
-    width: 80%;
-    height: 800px;
+    width: 66vw;
+    height: 86vh;
     background-color: rgba(0, 0, 0, 0.042);
-    border: 1px dotted rgb(73, 189, 232);
+    border: 1px dotted var(--blue);
     box-shadow: 5px 10px rgb(73, 189, 232);;
     border-radius: 45px;
-    opacity: 0,6;
+   
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     .conteiner
 {
-    margin: 4% 4%;
-    width: 100vw;
-    height: 800px;
+    width: 96vw;
+    height: 86vh;
     background-color: rgba(0, 0, 0, 0.042);
     border: 1px dotted rgb(73, 189, 232);
     box-shadow: 5px 10px rgb(73, 189, 232);;
     border-radius: 45px;
-    opacity: 0,6;
+   
 }
 }
 header{
@@ -42,11 +52,15 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 24px;
-    height: 100px;
+    height: 10vh;
     
     border-bottom: 2px solid rgb(73, 189, 232);
     border-radius: 12px;
+    
+}
+h1{
+    color:var(--mainfont); 
+    text-transform: uppercase;
     
 }
 main{
@@ -54,12 +68,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+    
 }
-h1{
-    color:rgb(2,0,36); 
-    min-width: max-content;
-}
+
 p{
     text-align: center;
     margin-top: 1em;
