@@ -49,9 +49,12 @@ body{
     border-radius: 45px;
    
 }}
-@media (max-width: 30em) and (orientation: landscape) {
- 
+@media (orientation: landscape) {
+    body {
+      color: rebeccapurple;
+    }
   }
+
 header{
     display: flex;
     justify-content: center;
@@ -73,7 +76,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     
 }
 
@@ -95,8 +98,7 @@ label{
 
 .btns{
     
-       
-        top:50%;
+      
         background-color:#0a0a23;
         color: #fff;
         border:none; 
