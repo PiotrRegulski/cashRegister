@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,12 +34,12 @@
           max="100"
         />
         <div class="btn-conteiner">
-          <button class="btns" type="submit">Sprawdź czy dobrze wydałeś</button>
+          <button class="btns" type="submit">Sprawdź</button>
           <button class="btns" type="reset">Restart</button>
         </div>
 
-        <div id="good-rest">Dobrze wydałeś</div>
-        <div id="bad-rest">Policz jeszcze raz</div>
+        <div class="answer" id="good-answer">Zgadza się!!!</div>
+        <div class="answer" id="bad-answer">Policz jeszcze raz</div>
       </main>
     </div>
     <script src="app.js"></script>
