@@ -49,19 +49,20 @@ body{
     border-radius: 45px;
    
 }}
-@media screen and (max-height: 694px) and (orientation: landscape) {
-    .conteiner {
-      color: blue;
-      padding: 2px;
-    }
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 2px;
+@media screen and (max-height: 29.313rem) and (orientation: landscape) {
+    
+    
+    *{
+        font-size: 1.1rem;
         
     }
+    .conteiner {
+     
+      
+      height: 99vh;
+    }
+
+
   }
 header{
     display: flex;
@@ -133,14 +134,21 @@ label{
 } */
 
 div .answer{
+    display: none;
 color: rgb(247, 243, 26);
 font-weight: bolder;
 text-transform: uppercase;
+
 margin:1em;
 text-shadow: #FC0 1px 0 10px;
 
 }
 #bad-answer{
-    display: none;
+    text-align: center;
+    letter-spacing: 0.3em;
+    line-height: 2;
+    display: block;
     text-transform: uppercase;
+    color: rgb(247, 26, 26);
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
 }
