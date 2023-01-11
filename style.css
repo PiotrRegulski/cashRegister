@@ -47,6 +47,7 @@ body{
     border: 1px dotted rgb(73, 189, 232);
     box-shadow: 5px 10px rgb(73, 189, 232);;
     border-radius: 45px;
+    
    
 }}
 @media screen and (max-height: 29.313rem) and (orientation: landscape) {

@@ -3,7 +3,7 @@ const toPayspan =document.querySelector("#to-pay");
 const paidSpan= document.querySelector("#paid");
 
 const cash = toPayspan.innerHTML=getRandomIntInclusive(1,100);
-paidSpan.innerHTML=getRndInteger(Number(cash), 100);
+paidSpan.innerHTML=getRndInteger(Number(cash), 200);
 
 
 
