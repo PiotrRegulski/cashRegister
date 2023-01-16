@@ -25,16 +25,19 @@
         </p>
         <p>Zapłaciłem <br /><span id="paid" class="due">24 zł</span>zł</p>
 
-        <label for="the-rest-of-money">Wpisz ile dostane reszty</label>
+        <label for="restofMoney">Wpisz ile dostane reszty</label>
         <input
           type="number"
-          name="the-rest-of-money"
-          id="rest-of-money"
+          name="restofMoney"
+          id="restofMoney"
           min="0"
-          max="100"
+          max="200"
+          placeholder="00"
+          value="00"
+          size="3"
         />
         <div class="btn-conteiner">
-          <button class="btns" type="submit">Sprawdź</button>
+          <button class="btns" id="btnTest" type="submit">Sprawdź</button>
           <button class="btns" type="reset">Restart</button>
         </div>
 
