@@ -1,16 +1,27 @@
 
 const toPayspan =document.querySelector("#to-pay");
 const paidSpan= document.querySelector("#paid");
-const btnTest = document.querySelector("button#btnTest")
-const cash = toPayspan.innerHTML=getRandomIntInclusive(1,100);
+const btnTest = document.querySelector("button#btnTest");
+const btnRestart = document.querySelector("button#btnReset");
+console.log(btnRestart);
+
 const goodAnswer = document.querySelector("#good-answer");
 const wrongAnswer= document.querySelector("#bad-answer");
-console.log(wrongAnswer);
+
 const restMoney = document.querySelector("#restofMoney")
 let rMoney;
-paidSpan.innerHTML=getRndInteger(Number(cash), 200);
 
 
+function setApp (){
+  const cash = toPayspan.innerHTML=getRandomIntInclusive(1,100);
+  paidSpan.innerHTML=getRndInteger(Number(cash), 200);
+  document.getElementById('restofMoney').value="";
+  goodAnswer.style.display='none';
+  wrongAnswer.style.display='none';
+
+
+}
+setApp();
 
 // liczenie randomowych liczb
 function getRandomIntInclusive(min, max) {
@@ -48,7 +59,5 @@ console.log(rMoney);
 
 }
 btnTest.addEventListener('click', chanegAnswer);
-// Number(cash);
-// console.log(Number(cash));
-
+btnRestart.addEventListener('click',setApp);
 
