@@ -10,7 +10,24 @@ const wrongAnswer= document.querySelector("#bad-answer");
 
 const restMoney = document.querySelector("#restofMoney")
 let rMoney;
+function easyVersion(){
+  
+  const cash = toPayspan.innerHTML=getRandomIntInclusive(1,100);
 
+  function isLong(bankote) {
+    return bankote > cash;
+  }
+  const banknotes=[10,20,40,50,100,200];
+  const longer = banknotes.filter(isLong);
+  const payTo = longer[0];
+  console.log(longer);  console.log(payTo); 
+  paidSpan.innerHTML=payTo;
+  goodAnswer.style.display='none';
+  wrongAnswer.style.display='none';
+  }
+
+
+easyVersion();
 
 function setApp (){
   const cash = toPayspan.innerHTML=getRandomIntInclusive(1,100);
@@ -21,7 +38,7 @@ function setApp (){
 
 
 }
-setApp();
+// setApp();
 
 // liczenie randomowych liczb
 function getRandomIntInclusive(min, max) {
@@ -59,5 +76,5 @@ console.log(rMoney);
 
 }
 btnTest.addEventListener('click', chanegAnswer);
-btnRestart.addEventListener('click',setApp);
+btnRestart.addEventListener('click',easyVersion);
 
