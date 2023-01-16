@@ -24,6 +24,7 @@ function easyVersion(){
   paidSpan.innerHTML=payTo;
   goodAnswer.style.display='none';
   wrongAnswer.style.display='none';
+  document.getElementById('restofMoney').value="";
   }
 
 
