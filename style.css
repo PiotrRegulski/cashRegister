@@ -84,6 +84,16 @@ p {
 label {
   padding-top: 1rem;
 }
+input#restofMoney{
+    color:red;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+input#restofMoney:focus {
+    border: 3px solid #555;
+  }
 .due {
   padding: 2px;
 }
