@@ -132,3 +132,12 @@ label {
   color: rgb(247, 26, 26);
   text-shadow: rgb(255, 0, 0) 1px 0 10px;
 }
+.numberofgoodanswers
+{
+    margin-top: 1.5rem;
+    font-size: smaller;
+    
+}
+.numberofgoodanswers span{
+    color: red;
+}
